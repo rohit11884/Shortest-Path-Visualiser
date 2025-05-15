@@ -2,14 +2,12 @@
 
 console.log("::: properties Loaded::: ");
 
-// properties.js
 const initial_max_grid_size = 47;
 const menu_width = 350;
 
-// speed of the maze_generation
-let maze_solver_speed = 100; // value > speed // 100 is dafult value
-// speed of the maze_ solver {affect all the algo}
-let maze_solver_algo_speed = 100; // value > speed // 100 is default value
+let maze_solver_speed = 100; 
+
+let maze_solver_algo_speed = 100;
 
 // slider input;
 let slider;

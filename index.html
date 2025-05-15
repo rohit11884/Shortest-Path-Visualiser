@@ -4,12 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" contetn="widht=device-width, initial-scale=0.0" />
-    <!-- scale page in different screen sizes-->
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <!-- support older version of IE-->
 
     <title>AI PATHFINDING VISUALIZER</title>
-    <!--  <link rel ="shortcut icon" type="image/png" href = "resource/images/icon.ping"/> -->
 
     <!--linking css files-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -18,15 +15,6 @@
     <link rel="stylesheet" type="text/css" href="css/buttons.css" />
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
 
-    <!--scripts-->
-    <script type="text/javascript" src="js/properties.js"></script>
-    <script type="text/javascript" src="js/visualizer.js" defer></script>
-    <script type="text/javascript" src="js/maze.js" defer></script>
-    <script type="text/javascript" src="js/algorithm.js" defer></script>
-    <script type="text/javascript" src="js/menu.js" defer></script>
-    <script type="text/javascript" src="js/script.js" defer></script>
-    <!-- test script-->
-    <!--  <script type="text/javascript" src="js/visualizer-master.js" defer></script> -->
   </head>
 
   <body>
@@ -43,13 +31,11 @@
             >Solving Algorithm</span
           >
           <div class="select" for="slct_1">
-            <!-- drop down-->
             <select id="slct_1" required="required">
               <option selected value="1">Breadth-First</option>
               <option value="2">A*</option>
               <option value="3">Bidirectional Breadth First</option>
             </select>
-            <!-- drop down arrow-->
             <svg>
               <use xlink:href="#select-arrow-down"></use>
             </svg>
@@ -77,11 +63,9 @@
         <div class="choice" id="choice_2">
           <span class="choice_label" id="choice_label_2">Maze Algorithm</span>
           <div class="select" for="slct_2">
-            <!-- drop down -->
             <select id="slct_2" required="required">
               <option hidden selected value="0">Custom</option>
             </select>
-            <!-- dropdown arrow -->
             <svg>
               <use xlink:href="#select-arrow-down"></use>
             </svg>
@@ -90,9 +74,7 @@
 
         <!-- buttons------------->
         <div class="button-wrap">
-          <!-- clear button-->
           <button class="my_button a" id="clear">Clear</button>
-          <!-- start button-->
           <button class="my_button b" id="play">Start</button>
         </div>
 
@@ -164,8 +146,15 @@
       <!-- visualizer view-->
       <div class="visualizer">
         <div id="grid"></div>
-        <!-- generated grid-table will assigin to grid div-->
       </div>
     </div>
+
+    <!--scripts-->
+    <script type="text/javascript" src="js/properties.js"></script>
+    <script type="text/javascript" src="js/visualizer.js" defer></script>
+    <script type="text/javascript" src="js/maze.js" defer></script>
+    <script type="text/javascript" src="js/algorithm.js" defer></script>
+    <script type="text/javascript" src="js/menu.js" defer></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
   </body>
 </html>

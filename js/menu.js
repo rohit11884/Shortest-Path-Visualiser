@@ -6,7 +6,6 @@ function hidden_clear() {
         clearTimeout(timeouts[i]);
     }
 
-    // timeouts[];
     clearInterval(my_interval);
 
     // delete pre-grid;
@@ -21,7 +20,6 @@ function clear(){
     console.log('clear function called');
     document.querySelector("#slct_2").value = "0";
 
-    // whiche clear pre-grid, create new grid, handle mouse input
     hidden_clear();
 }
 
@@ -40,7 +38,6 @@ function menu_event_listeners()
         let start_temp = start_pos;
 		let target_temp = target_pos;
 
-        // directly calling hidden_clear() function;
 		clear();
 
 		place_to_cell(start_pos[0], start_pos[1]).classList.remove("start");
@@ -66,6 +63,3 @@ function menu_event_listeners()
 
     });
 }
-
-// maze_generator();
-// menu_event_listeners();

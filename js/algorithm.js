@@ -176,6 +176,7 @@ function a_star() {
 
   maze_solvers_interval();
 }
+
 // bi-directional-breadth-first
 function bidirectional_breadth_first() {
   node_list = [];

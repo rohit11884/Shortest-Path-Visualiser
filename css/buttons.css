@@ -1,5 +1,4 @@
 :root {
-  /* Updated color palette */
   --primary-color: #3a86ff;
   --secondary-color: #8338ec;
   --success-color: #38b000;
@@ -17,18 +16,18 @@
   display: flex;
   padding: 0 20px 20px;
   margin-top: 25px;
-  gap: 12px; /* Increased gap for better spacing */
+  gap: 12px; 
 }
 
 .my_button {
   flex: 1;
   border: 1px solid var(--border-color);
   padding: 8px 0;
-  border-radius: 8px; /* Slightly more rounded */
-  height: 40px; /* Slightly taller */
+  border-radius: 8px; 
+  height: 40px;
   background-color: var(--background-color);
   color: var(--text-color);
-  font-weight: 500; /* Medium weight for better readability */
+  font-weight: 500; 
   transition: all 0.3s ease;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
@@ -50,18 +49,18 @@
   background-color: var(--btn-bg-play);
   color: white;
   border: none;
-  font-weight: 600; /* Bolder text for the primary action */
+  font-weight: 600;
 }
 
 #play:hover {
-  background-color: #2d9900; /* Darker shade on hover */
+  background-color: #2d9900;
   box-shadow: 0 4px 12px rgba(56, 176, 0, 0.3);
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 8px; /* Slightly thinner */
+  height: 8px;
   background: var(--slider-track-color);
   outline: none;
   opacity: 0.9;
@@ -87,7 +86,7 @@
 
 .slider::-webkit-slider-thumb:hover {
   transform: scale(1.1);
-  background: #2a75e8; /* Slightly darker on hover */
+  background: #2a75e8; 
 }
 
 .slider::-moz-range-thumb {
