@@ -17,7 +17,10 @@ function maze_solvers_interval() {
       node_list_index++;
 
       if (node_list_index == node_list.length) {
-        if (!found) clearInterval(my_interval);
+        if (!found){
+          clearInterval(my_interval);
+          alert("Path not found")
+        } 
         else {
           path = true;
           place_to_cell(start_pos[0], start_pos[1]).classList.add("cell_path");
